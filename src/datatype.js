@@ -1,7 +1,7 @@
 exports.checkDataType = (req,res,next) => {
-    const {number1,number2} = req.body;
+    const {num1,num2} = req.body;
 
-    if(isNaN(number1) || isNaN(number2))
+    if(isNaN(num1) || isNaN(num2))
     {
         return res.json({
             status: `error`,
