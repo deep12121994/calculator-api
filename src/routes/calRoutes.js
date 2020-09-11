@@ -1,7 +1,7 @@
 
 const express = require("express");
 const router = express.Router();
-const { addNumber, subNumber, mulNumber, divNumber } = require("../controller/operation");
+const { addNumber, subNumber, mulNumber, divNumber } = require("../operation");
 const { checkDataType } = require("../datatype");
 
 router.post("/addition", checkDataType, addNumber);

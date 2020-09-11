@@ -19,7 +19,7 @@ app.use(morgan("dev"));
 app.use("/", calcRouter);
 
 app.get("/", (__, res) => {
-	res.send("Hello world!");
+	res.json("Hello world!");
 });
 // here
 
