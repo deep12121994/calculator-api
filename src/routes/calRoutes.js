@@ -4,9 +4,9 @@ const router = express.Router();
 const { addNumber, subNumber, mulNumber, divNumber } = require("../operation");
 
 
-router.post("/addition", addNumber);
-router.post("/subtraction", subNumber);
-router.post("/multiplication", mulNumber);
-router.post("/division", divNumber);
+router.post("/add", addNumber);
+router.post("/sub", subNumber);
+router.post("/multiply", mulNumber);
+router.post("/divide", divNumber);
 
 module.exports = router;
