@@ -10,9 +10,9 @@ exports.addNumber = (req, res) => {
         });
     }
 
-	let result = num1 + num2;
+	let sum = num1 + num2;
 
-	if (result > 1000000) {
+	if (sum > 1000000) {
 		return res.json({
 			status: `error`,
 			message: `Overflow`,
@@ -22,7 +22,7 @@ exports.addNumber = (req, res) => {
 	return res.json({
 		status: `success`,
 		message: `the sum of given two numbers`,
-		sum: result,
+		sum,
 	});
 };
 
@@ -37,14 +37,14 @@ exports.subNumber = (req, res) => {
         });
     }
 
-	let result = num1 - num2;
+	let difference = num1 - num2;
 
-	if (result > 1000000) {
+	if (difference > 1000000) {
 		return res.json({
 			status: `error`,
 			message: `Overflow`,
 		});
-	} else if (result < -1000000) {
+	} else if (difference < -1000000) {
 		return res.json({
 			status: `error`,
 			message: `Underflow`,
@@ -54,7 +54,7 @@ exports.subNumber = (req, res) => {
 	return res.json({
 		status: `success`,
 		message: `The difference of given two numbers`,
-		difference:result,
+		difference,
 	});
 };
 
