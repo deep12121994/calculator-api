@@ -2,6 +2,14 @@
 exports.addNumber = (req, res) => {
 	const { num1, num2 } = req.body;
 
+	if(typeof num1==='string' || typeof num2 === 'string')
+    {
+        return res.json({
+            status: `error`,
+            message: `Invalid data type`,
+        });
+    }
+
 	let result = num1 + num2;
 
 	if (result > 1000000) {
@@ -20,6 +28,14 @@ exports.addNumber = (req, res) => {
 
 exports.subNumber = (req, res) => {
 	const { num1, num2 } = req.body;
+
+	if(typeof num1==='string' || typeof num2 === 'string')
+    {
+        return res.json({
+            status: `error`,
+            message: `Invalid data type`,
+        });
+    }
 
 	let result = num1 - num2;
 
@@ -45,6 +61,14 @@ exports.subNumber = (req, res) => {
 exports.mulNumber = (req, res) => {
 	const { num1, num2 } = req.body;
 
+	if(typeof num1==='string' || typeof num2 === 'string')
+    {
+        return res.json({
+            status: `error`,
+            message: `Invalid data type`,
+        });
+    }
+
 	let result = num1 * num2;
 
 	if (result > 1000000) {
@@ -63,6 +87,14 @@ exports.mulNumber = (req, res) => {
 
 exports.divNumber = (req, res) => {
 	const { num1, num2 } = req.body;
+
+	if(typeof num1==='string' || typeof num2 === 'string')
+    {
+        return res.json({
+            status: `error`,
+            message: `Invalid data type`,
+        });
+    }
 
 	if (num2 === 0) {
 		return res.json({
