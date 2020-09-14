@@ -6,7 +6,7 @@ exports.addNumber = (req, res) => {
     {
         return res.json({
             status: `error`,
-            message: `Invalid data type`,
+            message: `Invalid data types`,
         });
     }
 
@@ -33,7 +33,7 @@ exports.subNumber = (req, res) => {
     {
         return res.json({
             status: `error`,
-            message: `Invalid data type`,
+            message: `Invalid data types`,
         });
     }
 
@@ -53,7 +53,7 @@ exports.subNumber = (req, res) => {
 
 	return res.json({
 		status: `success`,
-		message: `The difference of given two numbers`,
+		message: `the difference of given two numbers`,
 		difference,
 	});
 };
@@ -65,7 +65,7 @@ exports.mulNumber = (req, res) => {
     {
         return res.json({
             status: `error`,
-            message: `Invalid data type`,
+            message: `Invalid data types`,
         });
     }
 
@@ -80,7 +80,7 @@ exports.mulNumber = (req, res) => {
 
 	return res.json({
 		status: `success`,
-		message: `The product of given numbers`,
+		message: `the product of given numbers`,
 		result,
 	});
 };
@@ -92,7 +92,7 @@ exports.divNumber = (req, res) => {
     {
         return res.json({
             status: `error`,
-            message: `Invalid data type`,
+            message: `Invalid data types`,
         });
     }
 
@@ -113,7 +113,7 @@ exports.divNumber = (req, res) => {
 
 	return res.json({
 		status: `success`,
-		message: `The division of given numbers`,
+		message: `the division of given numbers`,
 		result,
 	});
 };
