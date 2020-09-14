@@ -80,7 +80,7 @@ exports.mulNumber = (req, res) => {
 
 	return res.json({
 		status: `success`,
-		message: `the product of given numbers`,
+		message: `The product of given numbers`,
 		result,
 	});
 };
@@ -113,7 +113,7 @@ exports.divNumber = (req, res) => {
 
 	return res.json({
 		status: `success`,
-		message: `the division of given numbers`,
+		message: `The division of given numbers`,
 		result,
 	});
 };
