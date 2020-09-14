@@ -2,11 +2,11 @@
 const express = require("express");
 const router = express.Router();
 const { addNumber, subNumber, mulNumber, divNumber } = require("../operation");
-const { checkDataType } = require("../datatype");
 
-router.post("/addition", checkDataType, addNumber);
-router.post("/subtraction", checkDataType, subNumber);
-router.post("/multiplication",checkDataType, mulNumber);
-router.post("/division", checkDataType, divNumber);
+
+router.post("/addition", addNumber);
+router.post("/subtraction", subNumber);
+router.post("/multiplication", mulNumber);
+router.post("/division", divNumber);
 
 module.exports = router;
